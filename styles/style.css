@@ -40,10 +40,11 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
+  padding: 16px 100px;
 }
 
 .header .logo {
+	color: white;
   font-size: 32px;
   font-weight: bold;
 }
@@ -57,36 +58,34 @@ p {
 }
 
 .links a {
-  color: black;
-  font-size: 16px;
+  color: white;
+  font-size: 20px;
+	font-weight: bold;
   text-decoration: none;
 }
 
 /* Content */
 /*** Intro */
 .intro {
+	min-height: 50vh;
   background-color: blue;
   display: flex;
+	align-self: stretch;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  padding: 16px;
+  padding: 0px 100px;
   gap: 32px;
 }
 
 .intro-text {
-	flex: 1 1 auto;
-  max-width: 600px;
-  flex-shrink: 0;
+  max-width: 500px;
   display: flex;
   flex-flow: column wrap;
+	flex: 1;
   justify-content: space-between;
-  align-items: start;
+  /* align-items: start; */
   gap: 12px;
-}
-
-.intro-text > * {
-	flex: 1 1 auto;
 }
 
 .intro h1 {
@@ -96,9 +95,19 @@ p {
   font-weight: 900;
 }
 
+.intro p {
+	color: white;
+	font-size: 20px;
+	line-height: 1em;
+}
+
+.intro button {
+	align-self: start;
+}
+
 .intro .img-place {
 	flex: 1 1 auto;
-	max-width: 400px;
+	max-width: 600px;
   border: 2px solid red;
 }
 
