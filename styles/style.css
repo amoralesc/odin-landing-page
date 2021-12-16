@@ -2,9 +2,9 @@
 
 /* Global configurations */
 body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
+	margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -17,14 +17,14 @@ p {
 
 /* Global classes */
 .button {
+	padding: 8px 16px;
+	font-size: 16px;
   background-color: red;
+	color: white;
   border: none;
-  color: white;
-  padding: 8px 16px;
-  text-align: center;
+	text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
   cursor: pointer;
 }
 
@@ -36,31 +36,31 @@ p {
 
 /* Header */
 .header {
+	padding: 16px 100px;
   background-color: blue;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 100px;
 }
 
 .header .logo {
-	color: white;
-  font-size: 32px;
+	font-size: 32px;
   font-weight: bold;
+	color: white;
 }
 
 .links {
+	margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
   gap: 16px;
-  margin: 0;
-  padding: 0;
 }
 
 .links a {
-  color: white;
-  font-size: 20px;
+	font-size: 20px;
 	font-weight: bold;
+	color: white;
   text-decoration: none;
 }
 
@@ -68,58 +68,60 @@ p {
 /*** Intro */
 .intro {
 	min-height: 50vh;
+	padding: 0px 100px;
   background-color: blue;
-  display: flex;
-	align-self: stretch;
+  align-self: stretch;
+	display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  padding: 0px 100px;
   gap: 32px;
 }
 
 .intro-text {
   max-width: 500px;
+	flex: 1;
   display: flex;
   flex-flow: column wrap;
-	flex: 1;
   justify-content: space-between;
-  /* align-items: start; */
+  align-items: start;
   gap: 12px;
 }
 
-.intro h1 {
-  color: white;
+.intro-text h1 {
   font-size: 48px;
   line-height: 1em;
   font-weight: 900;
+	color: white;
 }
 
-.intro p {
-	color: white;
+.intro-text p {
 	font-size: 20px;
 	line-height: 1em;
+	color: white;
 }
 
-.intro button {
-	align-self: start;
+.intro-button {
+	background-color: red;
 }
 
 .intro .img-place {
-	flex: 1 1 auto;
 	max-width: 600px;
   border: 2px solid red;
+	flex: 1 1 auto;
 }
 
 /*** Info */
 .info {
-  background-color: white;
+	padding: 64px 100px;
+	background-color: white;
   text-align: center;
-  padding: 16px;
 }
 
 .info h2 {
-  margin-bottom: 16px;
+  margin-bottom: 64px;
+	font-size: 36px;
+	font-weight: 900;
 }
 
 .info-items {
@@ -127,28 +129,29 @@ p {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+	gap: 32px 64px;
 }
 
 .info-item {
+	max-width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
-  max-width: 200px;
-  margin: 16px 32px;
 }
 
 .info-item .img-place {
-  flex-shrink: 0;
-  box-sizing: border-box;
-  width: 200px;
+	width: 200px;
   height: 200px;
-  border: 5px solid blue;
-  border-radius: 10px;
+	border: 5px solid blue;
+  border-radius: 20px;
+	box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 .info-item p {
   margin-top: 16px;
+	font-size: 20px;
 }
 
 /*** Quote */
